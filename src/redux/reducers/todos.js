@@ -15,7 +15,7 @@ function todos(state = initialState, action){
             const copyState = [...state];
             copyState.unshift({
                 label: action.label,
-                visited: false,
+                complete: false,
                 id: copyState.length
             });
             return copyState;
